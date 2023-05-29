@@ -19,10 +19,4 @@ public class UserController {
     public ResponseEntity<?> loginUser(@RequestBody Users userData) {
         Users user=repo.findByUserId(userData.getUserId());
         return new ResponseEntity<>(user, HttpStatus.OK);    }
-
-    @PostMapping("/register")
-    public ResponseEntity<?> registerUser(@RequestBody Users userData) {
-        Users user = repo.findByUserId(userData.getUserId());
-        return new ResponseEntity<>(user, HttpStatus.OK);
-    }
 }

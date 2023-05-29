@@ -1,6 +1,6 @@
 package com.app.loginpage.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 
 @Entity
@@ -21,11 +21,11 @@ public class Users {
 
     public Users() {}
 
-    public Users(long id, String userId, String password) {
-        this.id = id;
-        this.userId = userId;
-        this.password = password;
-    }
+//    public Users(long id, String userId, String password) {
+//        this.id = id;
+//        this.userId = userId;
+//        this.password = password;
+//    }
 
     public long getId() {
         return id;
@@ -51,11 +51,11 @@ public class Users {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId='" + userId + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                "userId='" + userId + '\'' +
+//                ", password='" + password + '\'' +
+//                '}';
+//    }
 }
